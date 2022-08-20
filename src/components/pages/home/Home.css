@@ -1,0 +1,11 @@
+.home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://co19.nevseoboi.com.ua/space/311/31131/1562364308-1000540-space-nevseoboi.com.ua.jpg")
+    0 0 / cover no-repeat;
+}
+.someText {
+  font-size: 50px;
+}

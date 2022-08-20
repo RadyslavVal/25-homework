@@ -1,0 +1,28 @@
+.album {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.album-image {
+  flex: 0 1 32.5%;
+  margin: 0 0 20px 0;
+}
+@media screen and (max-width: 1023px) {
+  .album {
+    justify-content: space-around;
+  }
+  .album-image {
+    flex: 0 1 47%;
+    margin: 0 0 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .album {
+    justify-content: center;
+  }
+  .album-image {
+    flex: 0 1 90%;
+    margin: 0 0 20px 0;
+  }
+}

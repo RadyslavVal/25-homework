@@ -1,0 +1,51 @@
+.contact {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid silver;
+}
+.contact-gender {
+  margin: 10px;
+  width: 50px;
+  align-items: center;
+}
+.contact-gender img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+.contact-name {
+  display: flex;
+}
+.contact-firstName {
+  margin: 0 10px 0 0;
+}
+a {
+  text-decoration: none;
+}
+.contactInfo {
+  margin: 20px auto;
+  max-width: 500px;
+}
+.card {
+  align-items: center;
+  padding: 0 0 20px 0;
+}
+.card-header {
+  width: 100%;
+  text-align: center;
+}
+.card-body {
+  width: 100%;
+}
+.contactInfoPhone {
+  text-align: center;
+}
+.contactInfoPhone :first-child {
+  margin: 0 0 10px 0;
+}
+.backBtn {
+  padding: 5px 10px;
+}
