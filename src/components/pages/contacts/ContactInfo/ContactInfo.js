@@ -17,7 +17,7 @@ const ContactInfo = ({ data }) => {
                 <div className="card-body">
                     <p className="card-text">{description}</p>
                 </div>
-                <Link className='nav-link btn btn-info' to="/contacts"><span className='backBtn'>back</span></Link>
+                <Link className='nav-link btn btn-info' to="/25-homework/contacts"><span className='backBtn'>back</span></Link>
             </div>
         </div>
     );

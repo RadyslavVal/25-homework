@@ -7,9 +7,10 @@ import { Link } from "react-router-dom";
 
 
 const Contact = ({ data }) => {
+    
     const { firstName, lastName, phone, gender } = data;
     return (
-        <Link className="nav-link" to={`/contacts/${firstName}${lastName}`}>
+        <Link className="nav-link" to={`/25-homework/contacts/${firstName}${lastName}`}>
             <div className="contact">
                 <div className="contact-gender">
                     <img src={gender === 'male' ? male : gender === 'female' ? female : question} alt="Gender" />

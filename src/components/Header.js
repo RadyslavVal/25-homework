@@ -12,6 +12,7 @@ export default class Header extends Component {
     };
 
     render() {
+        const baseUrl = "/25-homework";
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container">
@@ -31,16 +32,16 @@ export default class Header extends Component {
                     <div className="collapse navbar-collapse" id="navbarColor02">
                         <ul className="navbar-nav" id="menu">
                             <li className="nav-item" id="films">
-                                <Link className="nav-link" to="/">Home</Link>
+                                <Link className="nav-link" to={`${baseUrl}/`}>Home</Link>
                             </li>
                             <li className="nav-item" id="planets">
-                                <Link className="nav-link" to="/posts">Posts</Link>
+                                <Link className="nav-link" to={`${baseUrl}/posts`}>Posts</Link>
                             </li>
                             <li className="nav-item" id="planets">
-                                <Link className="nav-link" to="/album">Album</Link>
+                                <Link className="nav-link" to={`${baseUrl}/album`}>Album</Link>
                             </li>
                             <li className="nav-item" id="planets">
-                                <Link className="nav-link" to="/contacts">Contacts</Link>
+                                <Link className="nav-link" to={`${baseUrl}/contacts`}>Contacts</Link>
                             </li>
                         </ul>
                     </div>

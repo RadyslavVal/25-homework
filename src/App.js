@@ -11,25 +11,26 @@ import ContactInfo from './components/pages/contacts/ContactInfo/ContactInfo.js'
 
 export default class App extends Component {
   render() {
+    const baseUrl = "/25-homework";
     return (
       <Router>
         <div className="App">
           <Header />
           <Switch>
-            <Route path="/" exact>
+            <Route path={`${baseUrl}/`} exact>
               <Home />
             </Route>
-            <Route path="/posts">
+            <Route path={`${baseUrl}/posts`}>
               <Posts />
             </Route>
-            <Route path="/album">
+            <Route path={`${baseUrl}/album`}>
               <Album />
             </Route>
-            <Route path="/contacts" exact>
+            <Route path={`${baseUrl}/contacts`} exact>
               <Contacts />
             </Route>
             {contacts.map((contact, i) =>
-              <Route path={`/contacts/${contact.firstName}${contact.lastName}`} key={i} >
+              <Route path={`${baseUrl}/contacts/${contact.firstName}${contact.lastName}`} key={i} >
                 <ContactInfo data={contact} />
               </Route>)}
           </Switch>
